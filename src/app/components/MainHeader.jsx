@@ -1,22 +1,51 @@
+"use client";
 import React from 'react'
 import Image from 'next/image';
+import { TypeAnimation } from 'react-type-animation';
+
 
 const MainHeader = () => {
   return (
     <section>
-      <div className="grid grid-cols-1 lg:grid-cols-12">
-        <div className="col-span-7">
-          <h1 className="text-[#004225] mb-4 text-4xl lg:text-6xl font-extrabold">Hello, I&apos;m Praise</h1>
-          <p className="text-[#004225] text-lg mb-6 lg:text-xl">I am Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
+      <div className="grid grid-cols-1 sm:grid-cols-12">
+        <div className="col-span-7 place-self-center text-center sm:text-left">
+          <h1 className="text-primary-color mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-normal font-extrabold">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-800 via-green-600 to-green-500">
+              Hello, I&apos;m{" "}
+            </span>
+            <br></br> 
+            <TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed out once, initially
+                'Praise',
+                1300, // wait 1s before replacing "Praise" with "A software Engineer"
+                'A Software Engineer',
+                1000,
+                'A Designer',
+                1000,
+                'A Visionary',
+                1000,
+              ]}
+              wrapper="span"
+              speed={50}
+              style={{ fontSize: '1em', display: 'inline-block' }}
+              repeat={Infinity}
+            />
+          </h1>
+          <p className="text-[#004225]  text-base sm:text-lg mb-6 lg:text-xl">I am Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
+          
           <div>
-            <a className="px-6 py-3 mr-4 hover:bg-slate-200 text-[#004225]"href="https://www.linkedin.com/in/praiseemmanuel/" target="_blank">
+            <a className="px-6 py-3 mr-4 rounded-full w-full sm:w-fit bg-gradient-to-br from-green-500 to-teal-500  hover:bg-slate-200 text-[#004225]" href="https://www.linkedin.com/in/praiseemmanuel/" target="_blank">
               Linkedin
             </a>
-            <a className="px-6 py-3 mr-4  text-[#004225]" href="https://github.com/praisepelumi" target="_blank">
+            <a className="px-6 py-3 mr-4 rounded-full w-full sm:w-fit  hover:bg-slate-800 text-[#004225] mt-3" href="https://github.com/praisepelumi" target="_blank">
               Github
             </a>
-            <a className="px-6 py-3 text-[#004225]" href="" target="_blank">
+            <a className="px-6 py-3 rounded-full w-ful sm:w-fitl hover:bg-slate-200 text-[#004225] mt-3" href="" target="_blank">
               Resume
+            </a>
+            <a className="px-6 py-3 rounded-full w-full sm:w-fit hover:bg-slate-800 text-[#004225] mt-3" href="" target="_blank">
+              Email
             </a>
           </div>
         </div>
