@@ -32,7 +32,6 @@ const MainHeader = () => {
               repeat={Infinity}
             />
           </h1>
-          transition duration-700 ease-in-out
           <p className="text-[#004225]  text-base sm:text-lg mb-6 lg:text-xl">I am Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
           
           <div>
