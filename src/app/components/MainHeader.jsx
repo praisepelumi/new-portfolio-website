@@ -9,9 +9,15 @@ const MainHeader = () => {
           <h1 className="text-[#004225] mb-4 text-4xl lg:text-6xl font-extrabold">Hello, I&apos;m Praise</h1>
           <p className="text-[#004225] text-lg mb-6 lg:text-xl">I am Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
           <div>
-            <li><a href="">Linkedin</a></li>
-            <li><a href="">Github</a></li>
-            <li><a href="">Resume</a></li>
+            <a className="px-6 py-3 mr-4 hover:bg-slate-200 text-[#004225]"href="https://www.linkedin.com/in/praiseemmanuel/" target="_blank">
+              Linkedin
+            </a>
+            <a className="px-6 py-3 mr-4  text-[#004225]" href="https://github.com/praisepelumi" target="_blank">
+              Github
+            </a>
+            <a className="px-6 py-3 text-[#004225]" href="" target="_blank">
+              Resume
+            </a>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
