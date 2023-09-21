@@ -1,19 +1,37 @@
 import Link from 'next/link';
 import React from 'react'
+import NavLink from './NavLink';
 
+const navLinks = [ 
+  {
+  title: "About",
+  path: "#about",
+  },
+  {
+  title: "Projects",
+  path: "#projects",
+  },
+  {
+  title: "Contact",
+  path: "#contact",
+  },
+];
 
 export const NavBar = () => {
+
   return (
-    <nav>
-      <div className='flex flex-wrap items-center justify-between mx-auto p-8'>
-        <Link href={"/"} className='text-2xl text-primary-color font-bold'>
+    <nav className='fixed top-0 left-0 right-0 z-10 bg-primary-color  bg-opacity-90'>
+      <div className='flex flex-wrap items-center justify-between mx-auto px-4 py-4'>
+        <Link href={"/"} className='text-xl md:text-2xl text-[#F5F5DC] font-bold'>
         &lt;Praise/&gt;
         </Link>
-        <div className="menu hidden md:block md:w-auto" id="navbar">
-          <ul>
-            <li>
-              <Link href={"#about"} className="block py-2 pl-3 pr-4 text-primary-color sm:text-xl rounded md:p-0 hover:text-primary-color ">About</Link>
+        <div className="menu md:block md:w-auto" id="navbar">
+          <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
+           {navLinks.map((link, index) => (
+            <li key={index}>
+              <NavLink href={link.path} title={link.title}/>
             </li>
+          ))}
           </ul>
         </div>
       </div>
