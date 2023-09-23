@@ -23,6 +23,8 @@ const MainHeader = () => {
                 1000,
                 'A Designer',
                 1000,
+                'A Creator',
+                1000,
                 'A Visionary',
                 1000,
               ]}
