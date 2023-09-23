@@ -37,7 +37,7 @@ const MainHeader = () => {
           <p className="text-[#004225]  text-base sm:text-lg mb-6 lg:text-xl">I am a Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
           
           <div>
-            <a className="inline-block px-6 py-3 mr-4 rounded-full w-full sm:w-fit hover:bg-gradient-to-br from-green-500 to-teal-200 transition duration-700 ease-in-out text-[#004225]" href="https://www.linkedin.com/in/praiseemmanuel/" target="_blank">
+            <a className="inline-block px-6 py-3 mr-4 rounded-full w-full sm:w-fit hover:bg-gradient-to-br from-green-500 to-teal-200 transition duration-300 text-[#004225]" href="https://www.linkedin.com/in/praiseemmanuel/" target="_blank">
               Linkedin
             </a>
             <a className="px-6 py-3 mr-4 rounded-full w-full sm:w-fit  hover:bg-gradient-to-br from-green-500 to-teal-200 text-[#004225] mt-3" href="https://github.com/praisepelumi" target="_blank">
