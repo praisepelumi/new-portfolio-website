@@ -18,6 +18,10 @@ const navLinks = [
   title: "Projects",
   path: "#projects",
   },
+  {
+  contact: "Contact",
+  path: "/",
+  }
 ];
 
 export const NavBar = () => {
