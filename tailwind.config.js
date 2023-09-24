@@ -15,7 +15,7 @@ module.exports = {
       colors: {
         'primary-color': '#004225',
         'secondary-color': '#F5F5DC',
-        'faint': '#339867',
+        'faint-color': '#339867',
       }
     },
   },
