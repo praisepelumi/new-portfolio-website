@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Projects = ({ imgUrl, title, description}) => {
+const ProjectsComponent = ({ imgUrl, title, description}) => {
   return (
     <div>
       <div className='h-52 md:h-72' style={{ background: `url(${imgUrl})`, backgroundSize: "cover"}}></div>
@@ -12,4 +12,4 @@ const Projects = ({ imgUrl, title, description}) => {
   )
 }
 
-export default Projects;
+export default ProjectsComponent;
