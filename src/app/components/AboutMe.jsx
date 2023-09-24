@@ -50,7 +50,7 @@ const AboutMe = () => {
   }
 
   return (
-    <section className='text-primary-color'>
+    <section className='text-primary-color' id="about">
       <div className='md: grid md:grid-cols-2 gap-8 items-centerpy-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
         <Image src="/images/green-me.png" alt="wanna get to know me?" width={500} height={500}/>
         <div className='mt-3 md:mt-0 text-left flex flex-col h-full'>
