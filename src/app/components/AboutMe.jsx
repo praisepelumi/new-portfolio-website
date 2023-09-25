@@ -2,6 +2,8 @@
 import React, { useTransition, useState } from 'react'
 import Image from 'next/image'
 import TabButton from './TabButton';
+import { LinkIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
 
 const TAB_DATA = [
   {
@@ -24,7 +26,7 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2'>
         <li>Test Driven Development</li>
-        <li>Containerst</li>
+        <li>Containers</li>
       </ul>
     ),
   },
@@ -33,7 +35,9 @@ const TAB_DATA = [
     id: "publications",
     content: (
       <ul className='list-disc pl-2'>
-        <li>Medium Script link</li>
+        <li className="flex items-center">
+          <a className='hover:text-faint-color' href="https://medium.com/@teamkubernet/introducing-kubern%C3%A9t-326cf56b9744" target="_blank">Introdcuing kubernét<LinkIcon className="h-5 w-5" /></a>
+        </li>
       </ul>
     ),
   },
