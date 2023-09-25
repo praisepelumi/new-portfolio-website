@@ -3,6 +3,7 @@ import MainHeader  from './components/MainHeader';
 import NavBar from './components/NavBar';
 import AboutMe from './components/AboutMe';
 import ProjectsComponent from './components/ProjectsComponent';
+import Footer from './components/Footer';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <MainHeader />
         <AboutMe />
         <ProjectsComponent />
+        <Footer />
       </div>
       
     </main>
