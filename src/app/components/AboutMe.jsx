@@ -56,13 +56,18 @@ const AboutMe = () => {
   return (
     <section className='text-primary-color' id="about">
       <div className='md: grid md:grid-cols-2 gap-8 items-centerpy-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-        <Image src="/images/green-me.png" alt="wanna get to know me?" width={500} height={500}/>
+        <Image src="/images/green-me.png" alt="wanna get to know me?" width={500} height={500} className="rounded-md"/>
         <div className='mt-3 md:mt-0 text-left flex flex-col h-full'>
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-700 via-green-400 to-green-300">About Me</h2>
-          <p className='text-base md:text-lg'>When I&apos;m not coding, you can find me cooking, playing the piano, or playing the guitar.
+          <p className='text-base md:text-lg'>
+            A couple of years ago, I got introduced to coding by my older sister, and since then I never stopped coding.
+            Today, I proudly identify as a software engineer, wholeheartedly committed to crafting elegant solutions to complex problems. 
+            With each line of code, I bring innovative applications to life, and I transform ideas into functional, impactful software. 
+          </p>
           <br />
-          I am proficient in TypeScript, JavaScript ES6+, React.js, Node.js, Redux, Express.js, SQL, HTML5, SCSS, CSS, NoSQL (MongoDB), Mongoose, React Testing Library, Jest, Supertest,
-          Webpack, bcrypt, Kubernetes, Docker, RESTful APIs, and Github</p>
+          <p className='text-base md:text-lg'>
+            When I&apos;m not coding, you can find me cooking, playing the piano, strumming the guitar, or dressed impeccably at an event.
+          </p>
 
           <div className='flex flex-row justify-start mt-8'>
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>{" "} Skills{" "}</TabButton>
