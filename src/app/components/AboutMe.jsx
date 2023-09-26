@@ -36,7 +36,7 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2'>
         <li className="flex items-center">
-          <a className='hover:text-faint-color' href="https://medium.com/@teamkubernet/introducing-kubern%C3%A9t-326cf56b9744" target="_blank">Introdcuing kubernét<LinkIcon className="h-5 w-5" /></a>
+          <a className='hover:text-faint-color' href="https://medium.com/@teamkubernet/introducing-kubern%C3%A9t-326cf56b9744" target="_blank">Introducing Kubernét<LinkIcon className="h-5 w-5" /></a>
         </li>
       </ul>
     ),
