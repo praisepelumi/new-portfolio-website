@@ -41,7 +41,7 @@ const MainHeader = () => {
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#004225]  text-base sm:text-lg mb-6 lg:text-xl">I am a Software Engineer who is passionate about solving complex problems and building accesible, inclusive, and robust applications.</p>
+          <p className="text-[#004225]  text-base sm:text-lg mb-6 lg:text-xl">I am a Software Engineer who is passionate about solving complex problems and building accessible, inclusive, and robust applications.</p>
           
           <div className='socials grid place-content-center md:grid-cols-4 gap-8 md:gap-8'>
               <Link  href="https://github.com/praisepelumi" target="_blank">
